@@ -30,7 +30,7 @@ func IsPrime(n uint64) bool {
 	return true
 }
 
-//I just try it in serval goroutine,but it seem to show low performance :(
+//I just try it in serval goroutine,but it seem be low performance :(
 func checkPrimeFactor(i uint64, c chan bool) {
 	if num%i == 0 && IsPrime(i) {
 		flag = false
